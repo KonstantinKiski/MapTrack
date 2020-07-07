@@ -13,9 +13,12 @@
 		AE5BAA3924B49CE10073A005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5BAA3724B49CE10073A005 /* Main.storyboard */; };
 		AE5BAA3B24B49CE30073A005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5BAA3A24B49CE30073A005 /* Assets.xcassets */; };
 		AE5BAA3E24B49CE30073A005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5BAA3C24B49CE30073A005 /* LaunchScreen.storyboard */; };
+		CE936328FDFE5C33FA1633AE /* Pods_MapTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7930CB002411D1A65AC956C /* Pods_MapTrack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F567035FE3CD990685C4511 /* Pods-MapTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTrack.debug.xcconfig"; path = "Target Support Files/Pods-MapTrack/Pods-MapTrack.debug.xcconfig"; sourceTree = "<group>"; };
+		A1FEE661960F764C82A0FD72 /* Pods-MapTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTrack.release.xcconfig"; path = "Target Support Files/Pods-MapTrack/Pods-MapTrack.release.xcconfig"; sourceTree = "<group>"; };
 		AE5BAA2E24B49CE10073A005 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5BAA3124B49CE10073A005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5BAA3324B49CE10073A005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AE5BAA3A24B49CE30073A005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5BAA3D24B49CE30073A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE5BAA3F24B49CE30073A005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7930CB002411D1A65AC956C /* Pods_MapTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE936328FDFE5C33FA1633AE /* Pods_MapTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EF4B1A5EBA20D18A906CF9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F567035FE3CD990685C4511 /* Pods-MapTrack.debug.xcconfig */,
+				A1FEE661960F764C82A0FD72 /* Pods-MapTrack.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE5BAA2524B49CE10073A005 = {
 			isa = PBXGroup;
 			children = (
 				AE5BAA3024B49CE10073A005 /* MapTrack */,
 				AE5BAA2F24B49CE10073A005 /* Products */,
+				7EF4B1A5EBA20D18A906CF9F /* Pods */,
+				F6B2B91D187B611F58BDBBCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = MapTrack;
 			sourceTree = "<group>";
 		};
+		F6B2B91D187B611F58BDBBCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7930CB002411D1A65AC956C /* Pods_MapTrack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5BAA4224B49CE30073A005 /* Build configuration list for PBXNativeTarget "MapTrack" */;
 			buildPhases = (
+				7390F96AA3FE08D9DBCD8B73 /* [CP] Check Pods Manifest.lock */,
 				AE5BAA2A24B49CE10073A005 /* Sources */,
 				AE5BAA2B24B49CE10073A005 /* Frameworks */,
 				AE5BAA2C24B49CE10073A005 /* Resources */,
+				2CF2AC232FF85B8FC3DE459D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CF2AC232FF85B8FC3DE459D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTrack/Pods-MapTrack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapTrack/Pods-MapTrack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapTrack/Pods-MapTrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7390F96AA3FE08D9DBCD8B73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapTrack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE5BAA2A24B49CE10073A005 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		AE5BAA4324B49CE30073A005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F567035FE3CD990685C4511 /* Pods-MapTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		AE5BAA4424B49CE30073A005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1FEE661960F764C82A0FD72 /* Pods-MapTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
